@@ -8,8 +8,8 @@ def load_data(filepath="project_benchmark_data.csv"):
     return fixed_tasks, shiftable_tasks
 
 def get_malaysian_tariff():
-    # Peak (8 AM - 10 PM): 0.35 RM
-    # Off-Peak (10 PM - 8 AM): 0.20 RM
+    # Peak (8 AM - 10 PM): 0.4592 RM
+    # Off-Peak (10 PM - 8 AM): 0.4183 RM
     # Represented as a list of 24 values (one for each hour)
-    tariff = [0.20] * 8 + [0.35] * 14 + [0.20] * 2
+    tariff = [0.4183] * 8 + [0.4592] * 14 + [0.4183] * 2
     return tariff
